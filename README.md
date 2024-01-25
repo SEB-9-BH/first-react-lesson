@@ -16,7 +16,7 @@ tktk Write a short but descriptive summary of the content in this module.
 | [Setup](./setup/README.md)                               | -- | -- | Setting up the development environment |
 | [Getting Started with React](./getting-started-with-react/README.md) | -- | -- | tktk skills covered                    |
 | [JSX Fundamentals](./jsx-fundamentals/README.md) | -- | -- | tktk skills covered                    |
-| [Functional Components](./functional-components/README.md) | -- | -- | tktk skills covered                    |
+| [Function Components](./function-components/README.md) | -- | -- | tktk skills covered                    |
 | [Dynamic Data in JSX](./dynamic-data-in-jsx/README.md) | -- | -- | tktk skills covered                    |
 | [Javascript Logic in JSX](./javascript-logic-in-jsx/README.md) | -- | -- | tktk skills covered                    |
 | [Conditional Rendering](./conditional-rendering/README.md) | -- | -- | tktk skills covered                    |
