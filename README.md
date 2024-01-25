@@ -18,7 +18,7 @@ tktk Write a short but descriptive summary of the content in this module.
 | [JSX Fundamentals](./jsx-fundamentals/README.md) | -- | -- | tktk skills covered                    |
 | [Function Components](./function-components/README.md) | -- | -- | tktk skills covered                    |
 | [Dynamic Data in JSX](./dynamic-data-in-jsx/README.md) | -- | -- | tktk skills covered                    |
-| [Javascript Logic in JSX](./javascript-logic-in-jsx/README.md) | -- | -- | tktk skills covered                    |
+| FING DELETE THIS[Javascript Logic in JSX](./javascript-logic-in-jsx/README.md) | -- | -- | tktk skills covered                    |
 | [Conditional Rendering](./conditional-rendering/README.md) | -- | -- | tktk skills covered                    |
 | [Looping with JSX Elements](./looping-with-jsx-elements/README.md) | -- | -- | tktk skills covered                    |
 | **Total content**                                        | -- | -- |                                        |
