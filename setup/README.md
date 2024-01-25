@@ -2,3 +2,7 @@
 
 
 ## Setup
+
+INSTALL VITE
+
+USE VITE TO CREATE THE APP
