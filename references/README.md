@@ -1,4 +1,4 @@
-# ![[tktk Module Name] - References](./assets/hero.png)
+# ![Building Your First React App - References](./assets/hero.png)
 
 ## Lesson references
 
