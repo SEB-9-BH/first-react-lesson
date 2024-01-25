@@ -9,4 +9,4 @@ Objective: Explain JSX and how it combines HTML and JavaScript.
 Topics:
 What is JSX and how does it differ from HTML?
 Embedding JavaScript expressions in JSX (using curly braces {}).
-JSX constraints and how it's compiled to JavaScript.
+Printing JS values to elements { }
