@@ -8,7 +8,5 @@
 Objective: Introduce React and set up a basic development environment.
 
 Topics:
-Introduction to React and its significance.
-Setting up a React development environment (using Vite).
 Creating a new React project with Vite.
 Overview of the React project structure.
