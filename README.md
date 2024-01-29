@@ -20,6 +20,7 @@ tktk Write a short but descriptive summary of the content in this module.
 | [Dynamic Data in JSX](./dynamic-data-in-jsx/README.md) | -- | -- | tktk skills covered                    |
 | [Conditional Rendering](./conditional-rendering/README.md) | -- | -- | tktk skills covered                    |
 | [Looping with JSX Elements](./looping-with-jsx-elements/README.md) | -- | -- | tktk skills covered                    |
+| [Conditional Rendering in Loops](./conditional-rendering-in-loops/README.md) | -- | -- | tktk skills covered                    |
 | **Total content**                                        | -- | -- |                                        |
 
 ## References

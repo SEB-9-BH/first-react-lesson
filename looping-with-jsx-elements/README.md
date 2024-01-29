@@ -10,3 +10,8 @@ Topics:
 Using .map() to iterate over arrays in JSX.
 Key prop and its importance in lists.
 Practical examples of rendering lists of data, just stick with strings or numbers for now, no need for complex data types in the array.
+
+<https://react.dev/learn/rendering-lists>
+^
+Level up?  (assign to variable, put variable into return)
+

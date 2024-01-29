@@ -10,3 +10,5 @@ Topics:
 You CANT use IF/ELSE anymore! WHAAAAT!
 Use an AND to decide whether to render a thing or not
 Use a ternary to decide between rendering one thing or another
+
+<https://react.dev/learn/conditional-rendering>

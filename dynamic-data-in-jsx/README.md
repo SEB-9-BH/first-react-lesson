@@ -13,3 +13,12 @@ Embedding JavaScript expressions in JSX (using curly braces {}).
 Printing JS values to elements { }
 
 <https://react.dev/learn/javascript-in-jsx-with-curly-braces>
+
+
+```jsx
+const App = () => {
+  const data = [{string: '', boolean: true}. {...}, {...}, {...}]
+
+  return data
+}
+```
