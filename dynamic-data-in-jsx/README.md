@@ -9,4 +9,7 @@ Objective: Demonstrate how to render dynamic data in JSX.
 Topics:
 Using JavaScript expressions to insert variable values into elements.
 Handling variables and constants inside JSX.
-Displaying lists and objects in JSX.
+Embedding JavaScript expressions in JSX (using curly braces {}).
+Printing JS values to elements { }
+
+<https://react.dev/learn/javascript-in-jsx-with-curly-braces>

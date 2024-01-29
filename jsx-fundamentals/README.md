@@ -8,5 +8,5 @@ Objective: Explain JSX and how it combines HTML and JavaScript.
 
 Topics:
 What is JSX and how does it differ from HTML?
-Embedding JavaScript expressions in JSX (using curly braces {}).
-Printing JS values to elements { }
+
+<https://react.dev/learn/writing-markup-with-jsx>

@@ -9,5 +9,9 @@ Objective: Teach how to create function components in React.
 
 Topics:
 Introduction to React components.
-Creating a simple function component that returns JSX.
-Understanding the role of return in JSX.
+App component from VITE, it's a function component! 
+Understanding the role of return.
+
+<https://react.dev/learn/your-first-component>
+
+<!-- ### Import/Export syntax -->
