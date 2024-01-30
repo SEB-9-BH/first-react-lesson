@@ -3,6 +3,41 @@
 
 ## Setup
 
-INSTALL VITE
+```bash
+npm create vite@latest
+```
 
-USE VITE TO CREATE THE APP
+You'll be prompted to provided a project name, choose a name that makes sense for this project, in this case we'll call the app `first-react-app`.
+
+Next, you'll select a framework. Use the arrow keys to choose the `React` option, and hit `Enter`.
+
+Again, use the arrow keys to choose the `JavaScript` variant.
+
+Move into the project you just created and run `npm i` to install the dependencies:
+
+```bash
+cd first-react-app
+npm i
+```
+
+Launch the app in VS Code:
+
+```bash
+code .
+```
+
+Open the `App.jsx` file in the `src` directory and replace the contents of it with the following:
+
+
+```jsx
+// src/App.jsx
+
+const App = () => {
+
+  return (
+    <h1>Hello world!</h1>
+  );
+}
+
+export default App
+```

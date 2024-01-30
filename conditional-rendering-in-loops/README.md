@@ -1,0 +1,48 @@
+# ![Building Your First React App - Conditional Rendering In Loops](./assets/hero.png)
+
+**Learning objective:** By the end of this lesson, students will be able to tktk
+
+## Conditional Rendering In Loops
+
+```jsx
+const App = () => {
+  const todo = { text: 'A brand new task', done: true }
+  const todos = [
+    {text: 'Learn JavaScript', done: true},
+    {text: 'Learn JSX', done: false},
+    {text: 'Learn HTML', done: true},
+    {text: 'Learn CSS', done: true},
+    {text: 'Master React', done: false},
+  ]
+
+  return (
+    <>
+      <h1>Dynamic Data</h1>
+      {todo.text}
+
+      <h1>Conditional Rendering</h1>
+      {todo.done ? todo.text : 'Task Completed'}
+
+      <h1>Looping With JSX</h1>
+      <ul>
+        {todos.map((element, index) =>
+          <li key={index}>
+            {element.text}
+          </li>
+        )}
+      </ul>
+
+      <h1>Looping And Conditional Rendering</h1>
+      <ul>
+        {todos.map((element, index) => 
+          <li key={index}>
+            {element.done ? 'Task Completed - ' : ''}{element.text}
+          </li>
+        )}
+      </ul>
+    </>
+  );
+}
+
+export default App
+```
