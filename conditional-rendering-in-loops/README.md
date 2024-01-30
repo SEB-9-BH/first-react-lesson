@@ -17,11 +17,11 @@ const App = () => {
 
   return (
     <>
-      <h1>Dynamic Data</h1>
-      {todo.text}
+      <h1>JavaScript in JSX</h1>
+      <p>{todo.text}</p>
 
       <h1>Conditional Rendering</h1>
-      {todo.done ? todo.text : 'Task Completed'}
+      <p>{todo.done ? todo.text : 'Task Completed'}</p>
 
       <h1>Looping With JSX</h1>
       <ul>
