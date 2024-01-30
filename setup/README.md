@@ -7,11 +7,11 @@
 npm create vite@latest
 ```
 
-You'll be prompted to provided a project name, choose a name that makes sense for this project, in this case we'll call the app `first-react-app`.
+You'll be prompted to provided a project name. `vite-project` is the default but when you start typing that default will go away. choose a name that makes sense for this project, in this case we'll call the app `first-react-app`.
 
 Next, you'll select a framework. Use the arrow keys to choose the `React` option, and hit `Enter`.
 
-Again, use the arrow keys to choose the `JavaScript` variant.
+Again, use the arrow keys to choose the `JavaScript` variant, and hit `Enter`.
 
 Move into the project you just created and run `npm i` to install the dependencies:
 
