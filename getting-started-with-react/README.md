@@ -114,5 +114,6 @@ There are a few other files and directories that Vite created for us when we cre
 - `public` directory - for holding static files, such as images, served by your application.
 - `.eslintrc.cjs` - for syntax highlighting to inform you of warnings or errors.
 - `.gitignore` - for ensuring we don't send environment details to GitHub.
-- ``
+- `vite.config.js` - for configuring the Vite app.
 
+You don't need to worry about the contents of these files for now, but they will be helpful down the road as your go on your React journey.
