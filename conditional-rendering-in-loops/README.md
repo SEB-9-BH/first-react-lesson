@@ -20,10 +20,10 @@ const App = () => {
       <h1>JavaScript in JSX</h1>
       <p>{todo.text}</p>
 
-      <h1>Conditional Rendering</h1>
-      <p>{todo.done ? todo.text : 'Task Completed'}</p>
+      <h2>Conditional Rendering</h2>
+      <p>{todo.done ? 'Task Completed - ' todo.text : todo.text }</p>
 
-      <h1>Looping With JSX</h1>
+      <h2>Looping With JSX</h2>
       <ul>
         {todos.map((element, index) =>
           <li key={index}>
@@ -32,7 +32,7 @@ const App = () => {
         )}
       </ul>
 
-      <h1>Looping And Conditional Rendering</h1>
+      <h2>Looping And Conditional Rendering</h2>
       <ul>
         {todos.map((element, index) => 
           <li key={index}>

@@ -4,8 +4,6 @@
 
 ## JavaScript in JSX
 
-
-
 To explore using JSX curly braces, let's create some new data. For now, let's just make a single object called `todo`:
 ```jsx
 // src/App.jsx
@@ -53,16 +51,8 @@ Remember, we can only ever write JavaScript expressions inside of the curly brac
 - Assigned to a variable
 - Provided as an argument to a function
 - Returned from a function
-- `console.log()`
+- Passed to a `console.log()`
 
+Statements perform actions, and applications consist primarily of statements.
 
-<!-- 
-Objective: Demonstrate how to render dynamic data in JSX.
-
-Topics:
-Using JavaScript expressions to insert variable values into elements.
-Handling variables and constants inside JSX.
-Embedding JavaScript expressions in JSX (using curly braces {}).
-Printing JS values to elements { }
-
-<https://react.dev/learn/javascript-in-jsx-with-curly-braces> -->
+We'll explore this idea more as we continue using JSX.

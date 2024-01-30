@@ -4,11 +4,50 @@
 
 ## Conditional Rendering
 
-Objective: Explain how JS logic determines what can get rendered.
+JavaScript provides a lot of tools for handling conditional logic, but not all of them work in JSX. For example, let's say that we wanted to add a "Task Completed" prefix to our `<p>` tag if `todo.done` is true. We might think to use an `if...else` statement, like this:  
 
-Topics:
-You CANT use IF/ELSE anymore! WHAAAAT!
-Use an AND to decide whether to render a thing or not
-Use a ternary to decide between rendering one thing or another
+```jsx
+const App = () => {
+  const todo = { text: 'A brand new task', done: true };
 
-<https://react.dev/learn/conditional-rendering>
+  return (
+    <>
+      <h1>JavaScript in JSX</h1>
+      <p>{todo.text}</p>
+
+      <h2>Conditional Rendering</h2>
+      <p>{if(todo.done) {
+        'Task Completed' - todo.text
+      } else {
+        todo.text
+      }}</p>
+    </>
+  );
+};
+
+export default App;
+```
+
+As we've discussed, we can't use statements in JSX. `if` statements and `if...else` statements are (as their name suggests) statements! 
+
+So we need a way to conditionally carry out action in a way that isn't a statement. This narrows our choices a bit, but it also helps us write more concise and readable code. Check out how a ternary expression helps us accomplish our goal with this code:
+
+```jsx
+const App = () => {
+  const todo = { text: 'A brand new task', done: true };
+
+  return (
+    <>
+      <h1>JavaScript in JSX</h1>
+      <p>{todo.text}</p>
+
+      <h2>Conditional Rendering</h2>
+      <p>{todo.done ? 'Task Completed - ' todo.text : todo.text }</p>
+    </>
+  );
+};
+
+export default App;
+```
+
+Ternary expressions evaluate to a single value regardless of their outcome!
