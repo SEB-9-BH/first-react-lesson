@@ -2,7 +2,6 @@
 
 **Learning objective:** By the end of this lesson, students will be able to tktk
 
-
 ## Function Components
 
 React components are essentially JavaScript functions that let you combine markup, CSS, and JavaScript into reusable UI elements.
@@ -33,16 +32,15 @@ Next, we add the markup inside of the `return` statement of function. Here we ha
 
 > 🧠 Markup inside of the `return` statement is what will be displayed to the user.
 
-Note that the markup we add goes inside of a `return`. It is also surrounded by `( )` because we've split what will be returned across multiple lines. Without the parenthesis, code on lines after the return would be ignored.
+Note that the markup we add goes inside of a `return`. It is also surrounded by `( )` because we've split what will be returned across multiple lines. Without the parenthesis, code on lines after the `return` would be ignored.
 
 ### Step 3: Export the function
 
 React uses [ES Module](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) syntax for importing and exporting files. `export default` allows us to denote a main function in a file to export, which can then be imported in other files. 
 
-
 ### Step 4: Importing/using the component
 
-With the component exported we can now use it anywhere in our application. We're already using it in the `src/main.jsx` file, let's check it out:
+With the component exported we can now use it anywhere in our application. We're already importing and using it in the `src/main.jsx` file, let's check it out:
 
 ```jsx
 // src/main.jsx
