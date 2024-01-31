@@ -8,14 +8,14 @@ You just built your first React app! Congrats! We used a tool called Vite to hel
 
 > Vite (French word for "quick", pronounced like "veet") is a build tool that aims to provide a faster and leaner development experience for modern web projects.
 
-Build tools can accomplish a lot, but in brief Vite gives us a couple of essential capabilities:
+Build tools accomplish a lot, but in brief, Vite gives us a couple of essential capabilities:
 
 - A starting file structure with sensible defaults.
 - A development server that serves our application locally.
 
 ## Default file structure
 
-Let's explore some of the files we have set up in our app already. The entry point into our application is the `index.html` file located in the root of our project. You can see it's contents below:
+Let's explore some of the files we have already set up in our app. The entry point into our application is the `index.html` file located at the root of our project. You can see its contents below:
 
 ```html
 <!-- index.html -->
@@ -35,7 +35,7 @@ Let's explore some of the files we have set up in our app already. The entry poi
 </html>
 ```
 
-The `index.html` file represents the entirety of the HTML we deliver to users of this application. It has some familiar boilerplate, and two elements in the body - a `<div>` with an `id` of `"root"` and a `<script>` that calls the `src/main.jsx` file. Let's check that out:
+The `index.html` file represents the entirety of the HTML we deliver to users of this application. It has some familiar boilerplate and two elements in the body - a `<div>` with an `id` of `"root"` and a `<script>` that calls the `src/main.jsx` file. Let's check that out:
 
 ```jsx
 // src/main.jsx
@@ -52,15 +52,15 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 )
 ```
 
-In our `index.html`, Vite established a `<div>` with an id of `"root"`. This HTML element is important because it establishes the root of our React application as shown in this line: 
+In our `index.html`, Vite established a `<div>` with an id of `"root"`. This HTML element is important because it establishes the root of our React application, as shown in this line: 
 
 ```jsx
 ReactDOM.createRoot(document.getElementById('root'))
 ```
 
-Passing the DOM element to `ReactDOM.createRoot()` means that React will create a `root` for this DOM element. React calls this a "root" DOM node because everything inside it will be managed by React DOM. Our app will exist inside of this element, and nothing but React should interact with anything inside of it.
+Passing the DOM element to `ReactDOM.createRoot()` means that React will create a `root` for this DOM element. React calls this a root DOM node because React DOM will manage everything inside it. Our app will exist inside this element, and nothing but React should interact with anything inside it.
 
-`root` has methods such as `render`, which allow us to display rendered React content.
+The element we designate as the root has methods such as `render`, which allow us to display rendered React content.
 
 This means we can pass React components to `root.render()` like so:
 
