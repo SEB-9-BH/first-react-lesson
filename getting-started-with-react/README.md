@@ -60,9 +60,7 @@ ReactDOM.createRoot(document.getElementById('root'))
 
 Passing the DOM element to `ReactDOM.createRoot()` means that React will create a `root` for this DOM element. React calls this a root DOM node because React DOM will manage everything inside it. Our app will exist inside this element, and nothing but React should interact with anything inside it.
 
-The element we designate as the root has methods such as `render`, which allow us to display rendered React content.
-
-This means we can pass React components to `root.render()` like so:
+The element we designate as the root has methods such as `render()`, which allow us to display rendered React content. This means we can pass React components to `root.render()` like so:
 
 ```jsx
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -72,7 +70,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 )
 ```
 
-The React `root` is now basically just rendering a single `App` component (ignore the `React.StrictMode` element for now), which is being imported from `src/App.jsx`: 
+The React `root` is now rendering a single `App` component (ignore the `React.StrictMode` component for now), which is being imported from `src/App.jsx`: 
 
 ```jsx
 // src/App.jsx
@@ -87,7 +85,7 @@ const App = () => {
 export default App
 ```
 
-You can begin to see how the pieces of this app are interacting with one another. The `index.html` file loads the `main.jsx` file as the entry point to our React application, which itself is rendering the `App` component.
+You can begin to see how this app's pieces interact with one another. The `index.html` file loads the `main.jsx` file as the entry point to our React application, which itself renders the `App` component.
 
 [tktk Hunter, a graphic showing the above ^^ would be suuuuuper swell here]
 
@@ -109,11 +107,11 @@ Navigate there, and you should see the `<h1>` from our `App.jsx` component displ
 
 ## Other files
 
-There are a few other files and directories that Vite created for us when we created this project. Some will potentially be familiar to you, while others will not. In the project root we have:
+There are a few other files and directories that Vite created for us when we created this project. Some may be familiar to you, while others will not. In the project root, we have:
 
 - `public` directory - for holding static files, such as images, served by your application.
 - `.eslintrc.cjs` - for syntax highlighting to inform you of warnings or errors.
 - `.gitignore` - for ensuring we don't send environment details to GitHub.
 - `vite.config.js` - for configuring the Vite app.
 
-You don't need to worry about the contents of these files for now, but they will be helpful down the road as your go on your React journey.
+You don't need to worry about the contents of these files for now, but they will be helpful down the road as you go on your React journey.
