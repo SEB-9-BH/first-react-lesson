@@ -4,9 +4,9 @@
 
 ## Conditional rendering in loops
 
-We've learned how to conditionally render data in JSX, and we've learned how to loop over data and transform it into JSX list elements. There may be times when you wish to do both - for example, let's say that you want to iterate over `todos` and mark when a task is complete. 
+We've learned how to render data in JSX conditionally and how to loop over data and transform it into JSX list elements. There may be times when you wish to do both - for example, let's say that you want to iterate over `todos` and mark when a task is complete. 
 
-We can use `map()` to iterate over the `todos` data, transforming each element into an `<li>` element. Inside of each `<li>`, we'll include the conditional rendering code we used earlier, attaching a prefix if `todo.done` is truthy. The result looks like the following: 
+We can use `map()` to iterate over the `todos` data, transforming each element into an `<li>` element. Inside each `<li>`, we'll include the conditional rendering code we used earlier, attaching a prefix if `todo.done` is truthy. The result looks like the following: 
 
 ```jsx
 const App = () => {
