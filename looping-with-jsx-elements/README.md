@@ -85,7 +85,7 @@ Note that this is not ideal, as the index of an element may change if the order 
 
 ## Extracting `map()` from the `return` 
 
-The pattern above may feel familiar to you if you're used to working in a templating tool like EJS or Liquid, as the code is structured more directly. You can see that inside of the `<ul>` there will be `<li>` elements that display the text for an individual `todo`. However, React documentation and many sources on the web will extract the `map()` out of the `return` to make the return more concise and potentially more readable. Here's what that looks like:
+The pattern above may feel familiar to you if you're used to working in a templating tool like EJS or Liquid, as the code is structured more directly. You can see that inside the `<ul>` there will be `<li>` elements that display the text for an individual `todo`. However, React documentation and many sources on the web will extract the `map()` out of the `return` to make the return more concise and potentially more readable. Here's what that looks like:
 
 ```jsx
 const App = () => {
@@ -119,6 +119,10 @@ const App = () => {
 export default App
 ```
 
-Above, we're assigning the result of calling `todos.map()` to a variable called `todoList`. The `todoList` holds an array of `<li>` elements inside of it. We then use the `todoList` inside of the `<ul>` element, exactly where we were calling `todos.map()` before. It is slightly more abstract but makes the `return` out of the `App` component more to the point.
+Above, we're assigning the result of calling `todos.map()` to a `todoList` variable. The `todoList` holds an array of `<li>` elements inside of it. We then use the `todoList` inside the `<ul>` element, exactly where we called `todos.map()` before. 
 
-Ultimately you will see both patterns in the wild and you should be able to recognize and write both. Going forward in our content we will be using [tktk which pattern are we going with?] to accomplish this.
+This pattern is slightly more abstract, but makes the `return` section of the `App` component read more intuitively - "Inside of the `<ul>` there is a `todoList`." 
+
+Instead of the alternative - "Inside of the `<ul>` we map over the `todos` array to build a collection of `<li>` elements that have the text for a todo inside of them".
+
+Ultimately, you will see both patterns in the wild and you should be able to recognize and write both. Going forward in our lectures, we will use [tktk which pattern are we going with?] to accomplish this.
