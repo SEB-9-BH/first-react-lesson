@@ -85,16 +85,18 @@ const App = () => {
 
 ### camelCasing element attributes
 
-As mentioned above, JSX turns into JavaScript. Any attributes written in JSX will become keys of JavaScript objects, which have the same limitations as any JavaScript variable name. For example, in JavaScript `class` is a reserved word, so we have to account for that when composing JSX as well.
+As mentioned above, JSX turns into JavaScript. Any attributes written in JSX will become keys of JavaScript objects, which have the same limitations as any JavaScript variable name. For example, in JavaScript, `class` is a reserved word, so we have to account for that when composing JSX as well.
 
-In html we could write: 
+In HTML, we could write: 
+
 ```html
 <div class="container"> </div>
 ```
 
-but in JSX we would use [className]([className](https://developer.mozilla.org/en-US/docs/Web/API/Element/className#notes) ) - camelCased - instead:
+but in JSX, we would use [className](https://developer.mozilla.org/en-US/docs/Web/API/Element/className#notes) - camelCased - instead:
+
 ```JSX
 <div className="container"> </div>
 ```
 
-JavaScript also forbids the use of dashes in variable names, so you'll notice that any attributes that use a dash in HTML are written camelCased in JSX.
+JavaScript also forbids dashes in variable names, so you'll notice that any attributes that use a dash in HTML are written camelCased in JSX.
