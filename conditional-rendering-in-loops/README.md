@@ -4,9 +4,9 @@
 
 ## Conditional rendering in loops
 
-We've learned how to conditionally render data in JSX, and we've learned how to loop over data and transform it into JSX list elements. There may be times when you wish to do both - for example, let's say that you want to iterate over `todos` and mark when a task is marked as done. 
+We've learned how to conditionally render data in JSX, and we've learned how to loop over data and transform it into JSX list elements. There may be times when you wish to do both - for example, let's say that you want to iterate over `todos` and mark when a task is complete. 
 
-We can use `map()` to iterate over the `todos` data, transforming each element into an `<li>` element. Inside of each `<li>`, we'll include the conditional rendering code we used earlier, attaching a prefix if `element.done` is truthy. The result looks like the following: 
+We can use `map()` to iterate over the `todos` data, transforming each element into an `<li>` element. Inside of each `<li>`, we'll include the conditional rendering code we used earlier, attaching a prefix if `todo.done` is truthy. The result looks like the following: 
 
 ```jsx
 const App = () => {
@@ -17,7 +17,7 @@ const App = () => {
     {text: 'Learn HTML', done: true},
     {text: 'Learn CSS', done: true},
     {text: 'Master React', done: false},
-  ]
+  ];
 
   return (
     <>
@@ -27,20 +27,20 @@ const App = () => {
       <h2>Conditional Rendering</h2>
       <p>{todo.done ? 'Task Completed - ' todo.text : todo.text }</p>
 
-      <h2>Looping With JSX</h2>
+      <h2>Looping with JSX</h2>
       <ul>
-        {todos.map((element, index) =>
+        {todos.map((todo, index) =>
           <li key={index}>
-            {element.text}
+            {todo.text}
           </li>
         )}
       </ul>
 
-      <h2>Looping And Conditional Rendering</h2>
+      <h2>Looping and Conditional Rendering</h2>
       <ul>
-        {todos.map((element, index) => 
+        {todos.map((todo, index) => 
           <li key={index}>
-            {element.done ? 'Task Completed - ' element.text : element.text}
+            {todo.done ? 'Task Completed - ' todo.text : todo.text}
           </li>
         )}
       </ul>

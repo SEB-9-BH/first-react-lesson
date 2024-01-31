@@ -49,10 +49,10 @@ const App = () => {
       <h2>Conditional Rendering</h2>
       <p>{todo.done ? 'Task Completed - ' todo.text : todo.text }</p>
 
-      <h2>Looping With JSX</h2>
+      <h2>Looping with JSX</h2>
       <ul>
-        {todos.map((element) =>
-          <li>{element.text}</li>
+        {todos.map((todo) =>
+          <li>{todo.text}</li>
         )}
       </ul>
     </>
@@ -78,7 +78,7 @@ React uses keys to help identify which items have been added, removed, or change
 As we are using example data without IDs, we will use the index of each element to simulate a unique key for each list item:
 
 ```jsx
-{todos.map((element, index) => <li key={index}>{element.text}</li>)}
+{todos.map((todo, index) => <li key={index}>{todo.text}</li>)}
 ```
 
 Note that this is not ideal, as the index of an element may change if the order or contents of the array change, which defeats the purpose of a unique key entirely. This is just a temporary solution until we have more robust data. 
@@ -98,8 +98,8 @@ const App = () => {
     {text: 'Master React', done: false},
   ];
 
-  const todoList = todos.map((element, index) =>
-    <li key={index}>{element.text}</li>
+  const todoList = todos.map((todo, index) =>
+    <li key={index}>{todo.text}</li>
   );
 
   return (
@@ -110,7 +110,7 @@ const App = () => {
       <h2>Conditional Rendering</h2>
       <p>{todo.done ? 'Task Completed - ' todo.text : todo.text }</p>
 
-      <h2>Looping With JSX</h2>
+      <h2>Looping with JSX</h2>
       <ul>{todoList}</ul>
     </>
   );
