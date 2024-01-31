@@ -4,7 +4,7 @@
 
 ## Conditional rendering
 
-JavaScript provides many tools for handling conditional logic, but not all work in JSX. For example, let's say that we wanted to add a "Task Completed" prefix to our `<p>` tag if `todo.done` is true. We might think to use an `if...else` statement, like this:  
+JavaScript provides many tools for handling conditional logic, but not all work in JSX. For example, let's say we wanted to add a "Task Completed" prefix to our `<p>` tag if `todo.done` is true. We might think to use an `if...else` statement like this:  
 
 ```jsx
 const App = () => {
@@ -30,7 +30,7 @@ export default App;
 
 As we've discussed, we can't use statements in JSX. `if` statements and `if...else` statements are (as their name suggests) statements! 
 
-So we need a way to conditionally carry out action in a way that isn't a statement. This narrows our choices a bit, but it also helps us write more concise and readable code. Check out how a ternary expression helps us accomplish our goal with this code:
+So, we need a way to conditionally carry out action in a way that doesn't use statements. This narrows our choices, but it has the benefit of forcing us to write more concise and readable code. Check out how a ternary expression helps us accomplish our goal with this code:
 
 ```jsx
 const App = () => {
