@@ -22,6 +22,8 @@ Since we'll be demonstrating how to loop over JSX elements, we'll need some new 
 
 ### Transforming arrays into lists of elements
 
+![The `map()` method in React](./assets/mapping-in-react.png)
+
 To display a list in JSX, we must transform an array of data into an array of JSX elements - this means that our array iterator methods must return a new array. `map()` is the most common way to do this in JSX, but others, like `filter()`, can also be useful.
 
 > 🚨 `forEach()` is not a useful iterator method when working with JSX, as it does not return anything. 
@@ -64,10 +66,7 @@ export default App
 
 Check the browser! You should see all of the todos in a list! If we check the console, however, we also notice a warning: 
 
-[tktk hunter convert to image asset plzty]
-```plaintext
-Warning: Each child in a list should have a unique "key" prop.
-```
+![Warning](./assets/warning.png)
 
 Let's touch on that next: 
 

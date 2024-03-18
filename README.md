@@ -1,4 +1,4 @@
-# ![Building Your First React App](./assets/tktk-hero.png)
+# ![Building Your First React App](./assets/hero.png)
 
 ## About
 
