@@ -2,7 +2,7 @@
 
 **Learning objective:** By the end of this lesson, students will be able to tktk
 
-## JSX Fundamentals
+## JSX fundamentals
 
 Developers typically separate structure (markup) and logic into separate files when creating apps. This does a nice job of keeping a separation of concerns, but it can also add time and complexity to the development process. 
 

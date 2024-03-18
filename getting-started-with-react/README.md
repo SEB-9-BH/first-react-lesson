@@ -2,11 +2,11 @@
 
 **Learning objective:** By the end of this lesson, students will be able to tktk
 
-## Getting Started with React
+## Getting started with React
 
 You just built your first React app! Congrats! We used a tool called Vite to help accomplish this. Here's how they describe it in their own words:
 
-> Vite (French word for "quick", pronounced like "veet") is a build tool that aims to provide a faster and leaner development experience for modern web projects.
+> 💡 Vite (French word for "quick", pronounced like "veet") is a build tool that aims to provide a faster and leaner development experience for modern web projects.
 
 Build tools accomplish a lot, but in brief, Vite gives us a couple of essential capabilities:
 
@@ -87,7 +87,9 @@ export default App
 
 You can begin to see how this app's pieces interact with one another. The `index.html` file loads the `main.jsx` file as the entry point to our React application, which itself renders the `App` component.
 
-[tktk Hunter, a graphic showing the above ^^ would be suuuuuper swell here]
+tktk option 1 or option 2
+![Entry point](./assets/react-entry-point-v1.png)
+![Entry point](./assets/react-entry-point-v2.png)
 
 ## Running the development server
 

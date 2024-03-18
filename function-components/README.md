@@ -2,13 +2,13 @@
 
 **Learning objective:** By the end of this lesson, students will be able to tktk
 
-## Function Components
+## Function components
 
 React components are essentially JavaScript functions that let you combine markup, CSS, and JavaScript into reusable UI elements.
 
 We've already created the `App.jsx` function component, but let's take a step back and break down the process of creating a new component from scratch using `App` as our example. 
 
-### Step 1: Define the Function
+### Step 1: Define the function
 
 The first step when creating a function component is to define the function. React function components are composed in exactly the same way as normal JavaScript functions: 
 
@@ -20,7 +20,7 @@ const App = () => {
 
 > 🧠 From the React Docs: 'React components are regular JavaScript functions, but their names must start with a capital letter or they won't work!'
 
-### Step 2: Add Markup
+### Step 2: Add markup
 
 Next, we add the markup inside of the `return` statement of function. Here we have an `<h1>` element with the text content `Hello world!`.
 
