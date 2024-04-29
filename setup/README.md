@@ -2,6 +2,14 @@
 
 ## Setup
 
+Open your Terminal application and navigate to your `~/code/ga/lectures` directory:
+
+```bash
+cd ~/code/ga/lectures
+```
+
+Next, run the following:
+
 ```bash
 npm create vite@latest
 ```

@@ -4,9 +4,9 @@
 
 ## JSX fundamentals
 
-Developers typically separate structure (markup) and logic into separate files when creating apps. This does a nice job of keeping a separation of concerns, but it can also add time and complexity to the development process. 
+Developers typically separate structure (markup) and logic into separate files when creating apps. This does a nice job of keeping the app's layout and functionality separate, but it can also add time and complexity to the development process.
 
-JSX is a syntax extension for JavaScript that lets you write HTML-like markup inside a JavaScript file, making it faster and easier to build complex user interfaces. 
+JSX is a syntax extension for JavaScript that lets you write HTML-like markup inside a JavaScript file, making it faster and easier to build complex user interfaces.
 
 ## JSX syntax
 
@@ -46,7 +46,7 @@ const App = () => {
 };
 ```
 
-Now we're error-free, but in this process we've added a `<div>` element that we didn't need for anything other than to make our application run. While this isn't the worst thing, it's not ideal either. To solve this problem, we can add a special element in React called a [Fragment](https://react.dev/reference/react/Fragment). 
+Now we're error-free, but in this process we've added a `<div>` element that we didn't need for anything other than to make our application run. While this isn't the worst thing, it's not ideal either. To solve this problem, we can add a special element in React called a [Fragment](https://react.dev/reference/react/Fragment), represented with empty `<>` and `</>` tags.
 
 Fragments wrap around elements to bundle them, just like what we accomplished with the `<div>` above. Check it out:
 
@@ -87,10 +87,10 @@ const App = () => {
 
 As mentioned above, JSX turns into JavaScript. Any attributes written in JSX will become keys of JavaScript objects, which have the same limitations as any JavaScript variable name. For example, in JavaScript, `class` is a reserved word, so we have to account for that when composing JSX as well.
 
-In HTML, we could write: 
+In HTML, we could write:
 
 ```html
-<div class="container"> </div>
+<div class="container"></div>
 ```
 
 but in JSX, we would use [className](https://developer.mozilla.org/en-US/docs/Web/API/Element/className#notes) - camelCased - instead:

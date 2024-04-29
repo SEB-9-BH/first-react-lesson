@@ -12,7 +12,7 @@ To explore using JSX curly braces, let's create some new data. For now, let's ju
 // src/App.jsx
 
 const App = () => {
-  // Add the following: 
+  // Add the following:
   const todo = { text: 'A brand new task', done: true };
 
   return (
@@ -25,7 +25,7 @@ const App = () => {
 };
 ```
 
-Curly braces allow us to add JavaScript to our JSX. We can write any JavaScript expression inside of the curly braces, meaning we can use dot notation to access a property on our `todo` object: 
+Curly braces allow us to add JavaScript to our JSX. We can write any JavaScript expression inside of the curly braces, and the result of the expression will be inserted into the DOM. This means we can use dot notation to access a property on our `todo` object:
 
 ```jsx
 // src/App.jsx
@@ -33,7 +33,7 @@ Curly braces allow us to add JavaScript to our JSX. We can write any JavaScript 
 const App = () => {
   const todo = { text: 'A brand new task', done: true };
 
-  // Replace the existing return with the following: 
+  // Replace the existing return with the following:
   return (
     <>
       <h1>JavaScript in JSX</h1>
@@ -42,7 +42,7 @@ const App = () => {
   );
 };
 
-export default App
+export default App;
 ```
 
 Inside curly braces, we can reference the `todo` object and inject the value held on its `text` property directly into our HTML-like syntax!
@@ -55,6 +55,13 @@ Remember, we can only ever write JavaScript expressions inside of the curly brac
 - Provided as an argument to a function
 - Returned from a function
 - Passed to a `console.log()`
+
+Here are some examples:
+
+- `2 + 2`
+- `"Hello."`
+- `age > 21`
+- `myFunc()`
 
 Statements perform actions, and applications consist primarily of statements.
 
