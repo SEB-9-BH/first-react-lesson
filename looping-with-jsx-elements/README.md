@@ -1,6 +1,6 @@
 # ![Building Your First React App - Looping with JSX Elements](./assets/hero.png)
 
-**Learning objective:** By the end of this lesson, students will be able to tktk
+**Learning objective:** By the end of this lesson, students will be able to use the `map()` method to loop through arrays and transform them into JSX elements.
 
 ## Looping with JSX elements
 
@@ -10,6 +10,7 @@ Since we'll be demonstrating how to loop over JSX elements, we'll need some new 
 // src/App.jsx
 
   const todo = { text: 'A brand new task', done: true };
+
   // Add the todos array below the existing todo object.
   const todos = [
     {text: 'Learn JavaScript', done: true},
@@ -97,6 +98,7 @@ const App = () => {
     {text: 'Master React', done: false},
   ];
 
+// tktk - move this map() into the return to be consistent with future lesson conventions
   const todoList = todos.map((todo, index) =>
     <li key={index}>{todo.text}</li>
   );

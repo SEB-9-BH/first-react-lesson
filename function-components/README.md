@@ -1,6 +1,6 @@
 # ![Building Your First React App - Function Components](./assets/hero.png)
 
-**Learning objective:** By the end of this lesson, students will be able to tktk
+**Learning objective:** By the end of this lesson, students will be able to create and export function components in React.
 
 ## Function components
 

@@ -1,6 +1,6 @@
 # ![Building Your First React App - JSX Fundamentals](./assets/hero.png)
 
-**Learning objective:** By the end of this lesson, students will be able to tktk
+**Learning objective:** By the end of this lesson, students will be able to return JSX from a function component in React.
 
 ## JSX fundamentals
 
@@ -8,7 +8,7 @@ Developers typically separate structure (markup) and logic into separate files w
 
 JSX is a syntax extension for JavaScript that lets you write HTML-like markup inside a JavaScript file, making it faster and easier to build complex user interfaces. 
 
-## JSX Pitfalls
+## JSX syntax
 
 Because the basic structure of JSX is so similar to HTML, it's easiest to examine it by highlighting the few places where its behavior differs.
 

@@ -1,6 +1,6 @@
 # ![Building Your First React App - Getting Started with React](./assets/hero.png)
 
-**Learning objective:** By the end of this lesson, students will be able to tktk
+**Learning objective:** By the end of this lesson, students will be able to explore the React file structure created by Vite, and start the development server. 
 
 ## Getting started with React
 

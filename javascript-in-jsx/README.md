@@ -1,10 +1,13 @@
 # ![Building Your First React App - JavaScript in JSX](./assets/hero.png)
 
-**Learning objective:** By the end of this lesson, students will be able to tktk
+**Learning objective:** By the end of this lesson, students will be able to embed JavaScript values and expressions into JSX.
 
 ## JavaScript in JSX
 
+In this section, we'll explore how to integrate JavaScript into JSX using curly braces. This capability allows us to dynamically insert JavaScript values and expressions within our JSX code.
+
 To explore using JSX curly braces, let's create some new data. For now, let's just make a single object called `todo`:
+
 ```jsx
 // src/App.jsx
 
