@@ -1,6 +1,6 @@
 # ![Building Your First React App - Conditional Rendering](./assets/hero.png)
 
-**Learning objective:** By the end of this lesson, students will be able to tktk
+**Learning objective:** By the end of this lesson, students will be able to use ternary expressions to implement conditional rendering in JSX.
 
 ## Conditional rendering
 
@@ -28,9 +28,11 @@ const App = () => {
 export default App;
 ```
 
-As we've discussed, we can't use statements in JSX. `if` statements and `if...else` statements are (as their name suggests) statements! 
+However, this code will not compile because JSX does not support JavaScript statements like `if...else` directly within its braces. JSX is designed to describe the UI structure, and only accepts expressions that evaluate to a value.
 
-So, we need a way to conditionally carry out action in a way that doesn't use statements. This narrows our choices, but it has the benefit of forcing us to write more concise and readable code. Check out how a ternary expression helps us accomplish our goal with this code:
+So, we need a way to conditionally carry out actions that doesn't use statements. This narrows our choices, but it has the benefit of forcing us to write more concise and readable code. To incorporate conditional logic within JSX, we can use a ternary expression, which is an inline conditional expression that evaluates to a single value. This is ideal for JSX, as it fits within the requirement of being an expression.
+
+Check out how a ternary expression helps us accomplish our initial goal within this code:
 
 ```jsx
 const App = () => {
