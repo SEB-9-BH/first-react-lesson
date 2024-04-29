@@ -4,7 +4,7 @@
 
 ## Conditional rendering
 
-JavaScript provides many tools for handling conditional logic, but not all work in JSX. For example, let's say we wanted to add a "Task Completed" prefix to our `<p>` tag if `todo.done` is true. We might think to use an `if...else` statement like this:  
+JavaScript provides many tools for handling conditional logic, but not all of these tools work in JSX. For example, let's say we wanted to add a "Task Completed" prefix to our `<p>` tag if `todo.done` is true. We might think to use an `if...else` statement like this:
 
 ```jsx
 const App = () => {
