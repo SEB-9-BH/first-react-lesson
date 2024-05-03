@@ -1,6 +1,6 @@
 # ![Building Your First React App - Getting Started with React](./assets/hero.png)
 
-**Learning objective:** By the end of this lesson, students will be able to explore the React file structure created by Vite, and start the development server. 
+**Learning objective:** By the end of this lesson, students will be able to explore the React file structure created by Vite, and start the development server.
 
 ## Getting started with React
 
@@ -15,7 +15,7 @@ Build tools accomplish a lot, but in brief, Vite gives us a couple of essential 
 
 ## Default file structure
 
-This section provides a high-level overview of what's happening in your React file structure. Don't get too bogged down with the specifics here, the important thing to note is that there are three files created by Vite initially: `index.html`, `App.jsx`, and `main.jsx`. This section covers how those three files interact. 
+This section provides a high-level overview of what's happening in your React file structure. Don't get too bogged down with the specifics here, the important thing to note is that there are three files created by Vite initially: `index.html`, `App.jsx`, and `main.jsx`. This section covers how those three files interact.
 
 Let's explore some of the files we have already set up in our app. The entry point into our application is the `index.html` file located at the root of our project. You can see its contents below:
 
@@ -54,7 +54,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 )
 ```
 
-In our `index.html`, Vite created a `<div>` with an id of `"root"`. This HTML element is important because it establishes the root of our React application, as shown in this line: 
+In our `index.html`, Vite created a `<div>` with an id of `"root"`. This HTML element is important because it establishes the root of our React application, as shown in this line:
 
 ```jsx
 ReactDOM.createRoot(document.getElementById('root'))
@@ -72,7 +72,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 )
 ```
 
-The React `root` is now rendering a single `App` component (ignore the `React.StrictMode` component for now), which is being imported from `src/App.jsx`: 
+The React `root` is now rendering a single `App` component (ignore the `React.StrictMode` component for now), which is being imported from `src/App.jsx`:
 
 ```jsx
 // src/App.jsx
