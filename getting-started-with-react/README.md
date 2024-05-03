@@ -89,19 +89,17 @@ export default App
 
 You can begin to see how this app's pieces interact with one another. The `index.html` file loads the `main.jsx` file as the entry point to our React application, which itself renders the `App` component.
 
-tktk option 1 or option 2
 ![Entry point](./assets/react-entry-point-v1.png)
-![Entry point](./assets/react-entry-point-v2.png)
 
 ## Running the development server
 
-To start the development server and view our app in the browser, we'll use the following command: 
+To start the development server and view our app in the browser, we'll use the following command:
 
 ```bash
 npm run dev
 ```
 
-You should see that `Vite` is available on port number 5173: 
+You should see that `Vite` is available on port number 5173:
 
 ```plaintext
 localhost:5173
