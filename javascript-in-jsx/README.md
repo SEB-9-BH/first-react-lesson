@@ -4,15 +4,15 @@
 
 ## JavaScript in JSX
 
-In this section, we'll explore how to integrate JavaScript into JSX using curly braces. This capability allows us to dynamically insert JavaScript values and expressions within our JSX code.
+Let's explore how to integrate JavaScript into JSX using curly braces. This capability allows us to insert JavaScript values and expressions into our JSX dynamically.
 
-To explore using JSX curly braces, let's create some new data. For now, let's just make a single object called `todo`:
+To explore using JSX curly braces, let's create some new data. For now, let's make a single object called `todo`:
 
 ```jsx
 // src/App.jsx
 
 const App = () => {
-  // Add the following:
+  // add the following:
   const todo = { text: 'A brand new task', done: true };
 
   return (
@@ -33,7 +33,7 @@ Curly braces allow us to add JavaScript to our JSX. We can write any JavaScript 
 const App = () => {
   const todo = { text: 'A brand new task', done: true };
 
-  // Replace the existing return with the following:
+  // replace the existing return with the following:
   return (
     <>
       <h1>JavaScript in JSX</h1>
@@ -41,15 +41,13 @@ const App = () => {
     </>
   );
 };
-
-export default App;
 ```
 
 Inside curly braces, we can reference the `todo` object and inject the value held on its `text` property directly into our HTML-like syntax!
 
 ### Expressions vs. statements in JavaScript
 
-Remember, we can only ever write JavaScript expressions inside of the curly braces. JavaScript expressions evaluate to a single value. They can be:
+Remember, we can only write JavaScript expressions inside of the curly braces. JavaScript expressions evaluate to a single value. They can be:
 
 - Assigned to a variable
 - Provided as an argument to a function

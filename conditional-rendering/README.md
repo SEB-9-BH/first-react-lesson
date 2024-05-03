@@ -4,9 +4,11 @@
 
 ## Conditional rendering
 
-JavaScript provides many tools for handling conditional logic, but not all of these tools work in JSX. For example, let's say we wanted to add a "Task Completed" prefix to our `<p>` tag if `todo.done` is true. We might think to use an `if...else` statement like this:
+JavaScript provides many tools for handling conditional logic, but not all of them work in JSX. For example, let's say we wanted to add a "Task Completed" prefix to our `<p>` tag if `todo.done` is true. We might think to use an `if...else` statement like this:
 
 ```jsx
+// src/App.jsx
+
 const App = () => {
   const todo = { text: 'A brand new task', done: true };
 
@@ -28,13 +30,15 @@ const App = () => {
 export default App;
 ```
 
-However, this code will not compile because JSX does not support JavaScript statements like `if...else` directly within its braces. JSX is designed to describe the UI structure, and only accepts expressions that evaluate to a value.
+However, this code will not compile because JSX does not support JavaScript statements like `if...else` directly within its braces. JSX is designed to describe the UI structure and only accepts expressions that evaluate to a value.
 
-So, we need a way to conditionally carry out actions that doesn't use statements. This narrows our choices, but it has the benefit of forcing us to write more concise and readable code. To incorporate conditional logic within JSX, we can use a ternary expression, which is an inline conditional expression that evaluates to a single value. This is ideal for JSX, as it fits within the requirement of being an expression.
+So, we need a way to conditionally carry out actions without using statements. This narrows our choices, but it has the benefit of forcing us to write more concise and readable code. To incorporate conditional logic within JSX, we can use a ternary expression, which is an inline conditional expression that evaluates to a single value. This is ideal for JSX, as it fits the requirement of being an expression.
 
 Check out how a ternary expression helps us accomplish our initial goal within this code:
 
 ```jsx
+// src/App.jsx
+
 const App = () => {
   const todo = { text: 'A brand new task', done: true };
 
@@ -44,7 +48,7 @@ const App = () => {
       <p>{todo.text}</p>
 
       <h2>Conditional Rendering</h2>
-      <p>{todo.done ? 'Task Completed - ' todo.text : todo.text }</p>
+      <p>{todo.done ? `Task Completed - ${todo.text}` : todo.text }</p>
     </>
   );
 };

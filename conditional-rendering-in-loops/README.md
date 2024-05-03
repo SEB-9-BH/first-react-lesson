@@ -4,9 +4,9 @@
 
 ## Conditional rendering in loops
 
-We've learned how to render data in JSX conditionally and how to loop over data and transform it into JSX list elements. There may be times when you wish to do both - for example, let's say that you want to iterate over `todos` and mark when a task is complete. 
+We've learned how to render data in JSX conditionally, loop over data, and transform it into JSX list elements. There may be times when you wish to do both - for example, let's say you want to iterate over `todos` and mark when a task is complete.
 
-We can use `map()` to iterate over the `todos` data, transforming each element into an `<li>` element. Inside each `<li>`, we'll include the conditional rendering code we used earlier, attaching a prefix if `todo.done` is truthy. The result looks like the following: 
+We can use `map()` to iterate over the `todos` data, transforming each element into an `<li>` element. Inside each `<li>`, we'll include the conditional rendering code we used earlier, attaching a prefix if `todo.done` is truthy. The result looks like the following:
 
 ```jsx
 const App = () => {
@@ -25,7 +25,7 @@ const App = () => {
       <p>{todo.text}</p>
 
       <h2>Conditional Rendering</h2>
-      <p>{todo.done ? 'Task Completed - ' todo.text : todo.text }</p>
+      <p>{todo.done ? `Task Completed - ${todo.text}` : todo.text }</p>
 
       <h2>Looping with JSX</h2>
       <ul>
@@ -40,7 +40,7 @@ const App = () => {
       <ul>
         {todos.map((todo, index) => 
           <li key={index}>
-            {todo.done ? 'Task Completed - ' todo.text : todo.text}
+            {todo.done ? `Task Completed - ${todo.text}` : todo.text }
           </li>
         )}
       </ul>
@@ -51,4 +51,4 @@ const App = () => {
 export default App
 ```
 
-Run the app and check the result! 
+Run the app and check the result!

@@ -15,9 +15,9 @@ Build tools accomplish a lot, but in brief, Vite gives us a couple of essential 
 
 ## Default file structure
 
-This section provides a high-level overview of what's happening in your React file structure. Don't get too bogged down with the specifics here, the important thing to note is that there are three files created by Vite initially: `index.html`, `App.jsx`, and `main.jsx`. This section covers how those three files interact.
+This section provides a high-level overview of the React app's file structure. Don't worry about the specifics here. The important thing to note is the three most essential files created by Vite initially: `index.html`, `App.jsx`, and `main.jsx`. Let's explore how these files interact.
 
-Let's explore some of the files we have already set up in our app. The entry point into our application is the `index.html` file located at the root of our project. You can see its contents below:
+The entry point into our application is the `index.html` file located at the root of our project. You can see its contents below:
 
 ```html
 <!-- index.html -->
@@ -60,7 +60,7 @@ In our `index.html`, Vite created a `<div>` with an id of `"root"`. This HTML el
 ReactDOM.createRoot(document.getElementById('root'))
 ```
 
-Passing the DOM element to `ReactDOM.createRoot()` means that React will create a `root` for this DOM element. React calls this a "root DOM node" because React DOM will manage everything inside it. Our app will exist inside this element, and nothing but React should interact with anything inside it.
+Passing the DOM element to `ReactDOM.createRoot()` means React will use that element as the root. React calls this a "root DOM node" because React DOM manages everything inside it. Our app will exist inside this element; nothing but React should interact with anything inside it.
 
 The element we designate as the root has methods such as `render()`, which allow us to display rendered React content. This means we can pass React components to `root.render()` like so:
 
@@ -82,9 +82,9 @@ const App = () => {
   return (
     <h1>Hello world!</h1>
   );
-}
+};
 
-export default App
+export default App;
 ```
 
 You can begin to see how this app's pieces interact with one another. The `index.html` file loads the `main.jsx` file as the entry point to our React application, which itself renders the `App` component.
@@ -109,11 +109,11 @@ Navigate there, and you should see the `<h1>` from our `App.jsx` component displ
 
 ## Other files
 
-There are a few other files and directories that Vite created for us when we created this project. Some may be familiar to you, while others will not. In the project root, we have:
+Vite created a few other files and directories for us when we created this project. Some may be familiar to you, while others will not. In the project root, we have:
 
-- `public` directory - for holding static files, such as images, served by your application.
+- `public` directory - for holding static files, such as images, served by your HTML.
 - `.eslintrc.cjs` - for syntax highlighting to inform you of warnings or errors.
-- `.gitignore` - for ensuring we don't send environment details to GitHub.
+- `.gitignore` - ensures we don't send environment details to GitHub.
 - `vite.config.js` - for configuring the Vite app.
 
 You don't need to worry about the contents of these files for now, but they will be helpful down the road as you go on your React journey.
