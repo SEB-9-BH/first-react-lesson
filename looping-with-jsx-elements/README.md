@@ -26,7 +26,7 @@ const App = () => {
       <p>{todo.text}</p>
 
       <h2>Conditional Rendering</h2>
-      <p>{todo.done ? `Task Completed - ${todo.text}` : todo.text }</p>
+      <p>{todo.done ? `Task Completed - ${todo.text}` : todo.text}</p>
     </>
   );
 };
@@ -61,7 +61,7 @@ const App = () => {
       <p>{todo.text}</p>
 
       <h2>Conditional Rendering</h2>
-      <p>{todo.done ? `Task Completed - ${todo.text}` : todo.text }</p>
+      <p>{todo.done ? `Task Completed - ${todo.text}` : todo.text}</p>
 
       <h2>Looping with JSX</h2>
       <ul>
@@ -109,7 +109,7 @@ const App = () => {
       <p>{todo.text}</p>
 
       <h2>Conditional Rendering</h2>
-      <p>{todo.done ? `Task Completed - ${todo.text}` : todo.text }</p>
+      <p>{todo.done ? `Task Completed - ${todo.text}` : todo.text}</p>
 
       <h2>Looping with JSX</h2>
       <ul>
@@ -153,7 +153,7 @@ const App = () => {
       <p>{todo.text}</p>
 
       <h2>Conditional Rendering</h2>
-      <p>{todo.done ? `Task Completed - ${todo.text}` : todo.text }</p>
+      <p>{todo.done ? `Task Completed - ${todo.text}` : todo.text}</p>
 
       <h2>Looping with JSX</h2>
       <ul>{todoList}</ul>
