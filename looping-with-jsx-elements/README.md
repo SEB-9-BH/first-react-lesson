@@ -1,4 +1,7 @@
-# ![Building Your First React App - Looping with JSX Elements](./assets/hero.png)
+<h1>
+  <span class="headline">Building Your First React App</span>
+  <span class="subhead">Looping with JSX Elements</span>
+</h1>
 
 **Learning objective:** By the end of this lesson, students will be able to use the `map()` method to loop through arrays and transform them into JSX elements.
 

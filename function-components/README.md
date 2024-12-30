@@ -1,4 +1,7 @@
-# ![Building Your First React App - Function Components](./assets/hero.png)
+<h1>
+  <span class="headline">Building Your First React App</span>
+  <span class="subhead">Function Components</span>
+</h1>
 
 **Learning objective:** By the end of this lesson, students will be able to create and export function components in React.
 
@@ -65,17 +68,17 @@ With the component exported, we can now use it anywhere in our application. Vite
 ```jsx
 // src/main.jsx
 
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
 // we import the default export from App.jsx
 // we can name the function whatever we want here, so we'll call it App
 import App from './App.jsx'
-import './index.css'
 
 // we then use the component below. Note that the tag is self-closing
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
     <App />
-  </React.StrictMode>,
+  </StrictMode>,
 )
 ```

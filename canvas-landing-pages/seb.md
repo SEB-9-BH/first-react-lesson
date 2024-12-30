@@ -1,4 +1,7 @@
-# ![Building Your First React App](../assets/hero.png)
+<h1>
+  <span class="prefix"></span>
+  <span class="headline">Building Your First React App</span>
+</h1>
 
 ## About
 

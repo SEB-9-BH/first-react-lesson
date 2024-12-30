@@ -1,10 +1,13 @@
-# ![Building Your First React App - Getting Started with React](./assets/hero.png)
+<h1>
+  <span class="headline">Building Your First React App</span>
+  <span class="subhead">Getting Started with React</span>
+</h1>
 
 **Learning objective:** By the end of this lesson, students will be able to explore the React file structure created by Vite, and start the development server.
 
 ## Getting started with React
 
-You just built your first React app! Congrats! We used a tool called Vite to help accomplish this. Here's how they describe it in their own words:
+You just built your first React app! Congrats! We used a tool called [Vite](https://vite.dev/guide/) to help accomplish this. Here's how they describe it in their own words:
 
 > 💡 Vite (French word for "quick", pronounced like "veet") is a build tool that aims to provide a faster and leaner development experience for modern web projects.
 
@@ -42,37 +45,37 @@ The `index.html` file represents the entirety of the HTML we deliver to users of
 ```jsx
 // src/main.jsx
 
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
 import './index.css'
+import App from './App.jsx'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
     <App />
-  </React.StrictMode>,
+  </StrictMode>,
 )
 ```
 
 In our `index.html`, Vite created a `<div>` with an id of `"root"`. This HTML element is important because it establishes the root of our React application, as shown in this line:
 
 ```jsx
-ReactDOM.createRoot(document.getElementById('root'))
+createRoot(document.getElementById('root'))
 ```
 
-Passing the DOM element to `ReactDOM.createRoot()` means React will use that element as the root. React calls this a "root DOM node" because React DOM manages everything inside it. Our app will exist inside this element; nothing but React should interact with anything inside it.
+Passing the DOM element to `createRoot()` means React will use that element as the root. React calls this a "root DOM node" because React DOM manages everything inside it. Our app will exist inside this element; nothing but React should interact with anything inside it.
 
 The element we designate as the root has methods such as `render()`, which allow us to display rendered React content. This means we can pass React components to `root.render()` like so:
 
 ```jsx
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
     <App />
-  </React.StrictMode>,
+  </StrictMode>,
 )
 ```
 
-The React `root` is now rendering a single `App` component (ignore the `React.StrictMode` component for now), which is being imported from `src/App.jsx`:
+The React `root` is now rendering a single `App` component (ignore the `StrictMode` component for now), which is being imported from `src/App.jsx`:
 
 ```jsx
 // src/App.jsx

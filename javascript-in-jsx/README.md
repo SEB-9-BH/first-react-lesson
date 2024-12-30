@@ -1,4 +1,7 @@
-# ![Building Your First React App - JavaScript in JSX](./assets/hero.png)
+<h1>
+  <span class="headline">Building Your First React App</span>
+  <span class="subhead">JavaScript in JSX</span>
+</h1>
 
 **Learning objective:** By the end of this lesson, students will be able to embed JavaScript values and expressions into JSX.
 

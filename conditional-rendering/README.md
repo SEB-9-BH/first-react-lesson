@@ -1,4 +1,7 @@
-# ![Building Your First React App - Conditional Rendering](./assets/hero.png)
+<h1>
+  <span class="headline">Building Your First React App</span>
+  <span class="subhead">Conditional Rendering</span>
+</h1>
 
 **Learning objective:** By the end of this lesson, students will be able to use ternary expressions to implement conditional rendering in JSX.
 

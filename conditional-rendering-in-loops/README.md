@@ -1,4 +1,7 @@
-# ![Building Your First React App - Conditional Rendering In Loops](./assets/hero.png)
+<h1>
+  <span class="headline">Building Your First React App</span>
+  <span class="subhead">Conditional Rendering in Loops</span>
+</h1>
 
 **Learning objective:** By the end of this lesson, students will be able to use loops to create lists in React and apply conditions to change how each list item is displayed based on its data.
 

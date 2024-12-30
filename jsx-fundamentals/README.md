@@ -1,4 +1,7 @@
-# ![Building Your First React App - JSX Fundamentals](./assets/hero.png)
+<h1>
+  <span class="headline">Building Your First React App</span>
+  <span class="subhead">JSX Fundamentals</span>
+</h1>
 
 **Learning objective:** By the end of this lesson, students will be able to return JSX from a function component in React.
 

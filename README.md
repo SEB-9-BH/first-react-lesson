@@ -1,15 +1,13 @@
-# ![Building Your First React App](./assets/hero.png)
+<h1>
+  <span class="prefix"></span>
+  <span class="headline">Building Your First React App</span>
+</h1>
 
 ## About
 
 In this module, you'll spin up your very first React application using Vite, a modern build tool that makes scaffolding new React applications easy and intuitive. This hands-on code-along is designed to guide you through the essential steps of setting up and navigating a React environment for the first time.
 
 You will learn to build and export function components, integrate JavaScript within JSX, and implement patterns like conditional rendering and looping with JSX elements. Each lesson focuses on understanding and utilizing React's core features, making it ideal for beginners eager to learn the mechanics of single-page applications in React.
-
-## Prerequisites
-
-- Intro to SPAs
-- Intro to React
 
 ## Content
 
@@ -29,7 +27,20 @@ You will learn to build and export function components, integrate JavaScript wit
 
 📖 [Reference Materials](./references/README.md)
 
-## Internal resources
+## Internal
+
+### Prerequisites
+
+- Intro to SPAs
+- Intro to React
+
+### Course landing pages
+
+- [RDS - React Development Short Course](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/building-your-first-react-app/canvas-landing-pages/rds.html)
+- [SEB - Software Engineering Bootcamp](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/building-your-first-react-app/canvas-landing-pages/seb.html)
+- [Fallback](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/building-your-first-react-app/canvas-landing-pages/fallback.html)
+
+### Resources
 
 ✏️ [Instructor Guide](./internal-resources/instructor-guide.md)
 
@@ -39,4 +50,4 @@ You will learn to build and export function components, integrate JavaScript wit
 
 ---
 
-**Find a 👾 bug 👾 or have suggestions? [Let us know](https://git.generalassemb.ly/modular-curriculum-all-courses/universal-resources-internal/blob/main/module-feedback.md)!**
+**Find a 👾 bug 👾 or have suggestions? [Let us know](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/universal-resources-internal/module-feedback.html)!**
